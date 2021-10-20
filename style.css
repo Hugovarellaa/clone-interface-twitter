@@ -41,6 +41,10 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+section .title {
+  margin-bottom: 1rem;
+}
+
 a.button {
   display: inline-flex;
   align-items: center;
@@ -55,7 +59,19 @@ a.button {
 
 div.divider-1 {
   height: 1px;
-  background: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1) 0%, hsla(var(--hue), 65%, 88%, 0.34) 100%);
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
+}
+div.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34) 0%,
+    hsla(var(--hue), 36%, 57%, 1) 100%
+  );
 }
 
 a.button:hover {
@@ -217,11 +233,44 @@ nav.show div.icon-close {
   text-align: center;
 }
 
-#home .text .title {
-  margin-bottom: 2rem;
-}
-
 #home .text p {
   margin-bottom: 2rem;
   max-width: 100%;
+}
+
+/* section about  */
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33.8%;
+  z-index: 0;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .text {
+  margin: 0 1.5rem;
 }
