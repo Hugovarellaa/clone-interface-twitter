@@ -18,7 +18,7 @@ a {
 }
 
 :root {
-  --hue: 238;
+  --hue: 50;
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -166,6 +166,10 @@ main {
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 nav {
@@ -405,8 +409,34 @@ nav.show div.icon-close {
 #contact ul li {
   display: flex;
   align-items: center;
-
 }
 #contact ul li i {
-  color: var(--base-color)
+  color: var(--base-color);
+}
+
+/* footer */
+
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+footer .brand p {
+  color: var(--text-color-light);
+}
+
+footer .brand p + p {
+  margin-top: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light)
+}
+
+footer .social a + a{ 
+    margin-left: 2rem;
 }
