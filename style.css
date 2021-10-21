@@ -434,9 +434,45 @@ footer .brand p + p {
 
 footer i {
   font-size: 1.5rem;
-  color: var(--text-color-light)
+  color: var(--text-color-light);
 }
 
-footer .social a + a{ 
-    margin-left: 2rem;
+footer .social a + a {
+  margin-left: 2rem;
+}
+
+.back-to-top {
+  background: var(--base-color);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.3rem;
+  border-radius: 9089898989px;
+  font-size: 1.3rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Queries */
+/*----------------------------------------------------------------
+  extra large devices: 1200px +
+  large devices: 1023px +
+  large devices: 992px +
+  medium devices: 767px +
+*/
+
+@media(min-width: 992px) {
+  html{
+    
+  }
 }
