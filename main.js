@@ -27,3 +27,22 @@ addEventListener("scroll", () => {
   }
 });
 
+// Scrollreveal -> Mostrar elementos suavemente quando rola scroll na pagina
+
+// const scrollReveal = scrollReveal({
+//   origin: "top",
+//   distance: "30px",
+//   duration: 700,
+//   reset: true,
+// });
+
+// scrollReveal.reveal(
+//   `
+//   #home .text, #home .image,
+//   #about .text, #about .image,
+//   #services header, #services .card,
+//   #testimonials header, #testimonials .testimonials,
+//   #contact .text, #contact .links
+//   `,
+//   { interval: 100 }
+// );
